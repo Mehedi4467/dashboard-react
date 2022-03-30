@@ -1,6 +1,7 @@
 
 import { useEffect, useState } from 'react';
 import Pricing from '../../Components/Dashboard/Pricing/Pricing';
+import Analysis from '../Analysis/Analysis';
 import Menu from '../Header/Menu/Menu';
 
 const Dashboard = ({ toggle }) => {
@@ -30,6 +31,8 @@ const Dashboard = ({ toggle }) => {
                     < Pricing dasboard={revenue} header='REVENUE'></Pricing>
                     < Pricing dasboard={avaragePrice.toFixed(2)} header='AVERAGE PRICE'></Pricing>
                 </div>
+
+
             </div>
 
 
