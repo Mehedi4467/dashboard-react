@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import profile from '../../images/profile.jpg';
 import { MenuAlt1Icon, BellIcon, CogIcon, SearchIcon, XIcon } from '@heroicons/react/solid';
 
-import Menu from './Menu/Menu';
+// import Menu from './Menu/Menu';
 
 
-const Header = () => {
-    const [toggle, setToggle] = useState(false);
+const Header = ({ setToggle, toggle }) => {
+
     const [open, setOpen] = useState(false);
     return (
         <div>
@@ -50,9 +50,6 @@ const Header = () => {
                     </div>
                 </div>
             </header>
-            <div className={`absolute ease-in duration-500 bg-inherit ${toggle ? 'left-0' : 'left-[-200px]'}`}>
-                <Menu></Menu>
-            </div>
 
             <div className={` absolute duration-500 ease-out rounded-lg p-5 right-0 shadow-lg z-0 ${open ? 'top-20' : 'top-[-250px]'}`}>
                 <h2>Coming Soon....</h2>
